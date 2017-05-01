@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Household builder</title>
+        <style>
+            .debug {
+                font-family: monospace;
+                border: 1px solid black;
+                padding: 10px;
+                display: none;
+            }
+            #close{
+                cursor: pointer;
+            }
+            .builder, .alert, .yourdetail{
+                display:none;
+            }
+            dt{
+                display:inline;
+                float:left;
+            }
+            [class^="close_"]{
+                cursor: pointer;
+            }
+            
+        </style>
+        <link rel="stylesheet" href="css/bootstrap.css">
+       
+    </head>
+    <body>
+        <div class="container">
+        <h1>Household builder</h1>
+        
+            <div class="alert alert-danger" role="alert" id="msg">
+              
+            </div>
+            <div class="mainbuilder">
+                <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" class="form-control" id="fullname" >
+                </div>
+                <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control age" id="mainage">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    Smoker?
+                  <input type="checkbox" class="form-check-input" name="smoker" id="smoker" checked>
+
+                </label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="mainApplicant">submit</button>
+            </div>
+            <div class="yourdetail jumbotron">
+            <div class="row">    
+            <dt>Full Name: &nbsp;</dt>   
+                <dd class="dname"></dd>
+             </div>
+            <div class="row">     
+            <dt>Age: &nbsp; </dt>
+                <dd class="dage"> </dd>   
+                </div>
+                <div class="row"> 
+            <dt>Smoker: &nbsp; </dt>
+                <dd class="dsmoker"> </dd>   
+                </div>
+            </div>
+        <div class="builder">
+             <h1>Add your family members</h1>
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" class="form-control" id="fullname1" >
+            </div>
+            <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age1" >
+            </div>
+            <div class="form-group">
+            <label for="relation">Relationship</label>
+            <select class="form-control" id="rel" nam="rel">
+              <option value="">---</option>
+                            
+                            <option value="spouse">Spouse</option>
+                            <option value="child">Child</option>
+                            <option value="parent">Parent</option>
+                            <option value="grandparent">Grandparent</option>
+                            <option value="spouse">Siblings</option>
+                            <option value="other">Other</option>
+            </select>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                Smoker?
+              <input type="checkbox" class="form-check-input" name="smoker" id="smoker1">
+             
+            </label>
+            </div>
+           
+               
+              
+               
+                <div>
+                    <button  class="add btn btn-primary">add</button>
+                </div>
+                <div id="personlist">
+                    <table class="table table-striped">
+                        <tr><th>Name</th><th>Age</th><th>Smoker</th><th>Relation</th><th></th></tr>
+                    </table>
+            
+                </div>
+                <div>
+                    
+                </div>
+          </div>
+        </div>
+        <pre class="debug">personArray</pre>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
