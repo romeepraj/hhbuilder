@@ -55,6 +55,9 @@ $('.add').click(function(){
         
         body.append(row);
        
+    }else{
+        $('#msg').html(addNewFamily);
+        $('.alert').show();
     }
     $('#fullname1').val('');
     $('#age1').val('');
@@ -123,8 +126,6 @@ Person.prototype = {
         else{
             return this.msg;
         }
-        
-        
     }
     
 }
