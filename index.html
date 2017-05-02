@@ -3,33 +3,31 @@
     <head>
         <meta charset="utf-8">
         <title>Household builder</title>
-        <style>
-            .debug {
-                font-family: monospace;
-                border: 1px solid black;
-                padding: 10px;
-                display: none;
-            }
-            #close{
-                cursor: pointer;
-            }
-            .builder, .alert, .yourdetail{
-                display:none;
-            }
-            dt{
-                display:inline;
-                float:left;
-            }
-            [class^="close_"]{
-                cursor: pointer;
-            }
-            
-        </style>
+       <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.css">
        
     </head>
     <body>
-        <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container ">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Household Builder</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="applicant.html">Applicant</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+        <div class="container wrapper">
         <h1>Household builder</h1>
         
             <div class="alert alert-danger" role="alert" id="msg">
@@ -54,7 +52,8 @@
                 <button type="submit" class="btn btn-primary" id="mainApplicant">submit</button>
             </div>
             <div class="yourdetail jumbotron">
-            <div class="row">    
+            <div class="row">  
+                <h2>Applicant</h2>
             <dt>Full Name: &nbsp;</dt>   
                 <dd class="dname"></dd>
              </div>

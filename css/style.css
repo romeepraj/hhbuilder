@@ -1,0 +1,29 @@
+ .debug {
+    font-family: monospace;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+}
+#close{
+    cursor: pointer;
+}
+.builder, .alert, .yourdetail{
+    display:none;
+}
+dt{
+    display:inline;
+    float:left;
+}
+[class^="close_"], [class^="view_"]{
+    cursor: pointer;
+}
+.wrapper{
+    margin-top:40px;
+}
+.table-striped > tbody > .color{
+        background-color: #0275d8 !important;
+        color:#fff;
+}
+.members{
+    display:none;
+}

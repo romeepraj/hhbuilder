@@ -1,3 +1,57 @@
+$(document).ready(function(){
+    
+    $.get("data/applicants.json", function(result){
+
+        var body = $(".buildertable").find('tbody');
+        var row = $('<tr>');
+        var count = 0;
+        $.each(result, function(i, field){
+            var row = $('<tr>');
+            var applicant = result[i].applicant;
+            var family = result[i].family;
+            console.log(family);
+            Object.keys(applicant).forEach( (function(key) {
+
+                var column = $('<td>');
+                column.append(applicant[key]);
+                row.append(column);
+               
+            }));
+            row.append('<td><span class="view_' + count + '">View Family Members</span></td>');
+            body.append(row); 
+
+            var body1 = $(".members").find('tbody');
+           
+            $('.view_' + count).click(
+            (function (a) {
+
+                return function () {
+                    var div = $("tr").removeClass('color');
+                    $('.members').show();
+                    var div = $(this).parent("td").parent("tr").addClass('color');
+                  
+                    
+                    $(".members tbody tr").remove();  
+                    for(var i=0;i<family.length;i++) {
+                        var row1 = $('<tr>');
+                        for(var j=0;j<family[i].length;j++) {
+                            var column1 = $('<td>');
+                            column1.append(family[i][j]);
+                            row1.append(column1);
+                        }
+                        body1.append(row1); 
+
+                    }
+                    
+                   
+                };
+            }(count)));
+            count +=1;
+           
+        });
+    });
+});
+
 var personArray = [];
 var count = 0;
 var obj = {
@@ -37,7 +91,7 @@ $('.add').click(function(){
     if(Array.isArray(addNewFamily)){
        
         obj.family.push(addNewFamily);
-       
+       console.log(JSON.stringify(obj));
         var body = $(".table").find('tbody');
         // Create a new row element
         var row = $('<tr>');

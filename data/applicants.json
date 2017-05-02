@@ -1,0 +1,29 @@
+[
+    {
+        "applicant":{
+            "age":"33",
+            "fullname":"Romee Prajapati",
+            "smoker":"Yes",
+            "relation":" "
+        },
+        "family":[["Manish Shrestha","34","No","spouse"],["Rubee Prajapati","23","No","sibling"] ]
+    },
+    {
+        "applicant":{
+            "age":"34",
+            "fullname":"Manish Shrestha",
+            "smoker":"Yes",
+            "relation":" "
+        },
+        "family":[["Romee Shrestha","34","No","spouse"],["Prateema Shrestha","37","No","sibling"] ]
+    },
+    {
+        "applicant":{
+            "age":"63",
+            "fullname":"Ganga Lal Prajapati",
+            "smoker": "No",
+            "relation":" "
+        },
+        "family":[["Romee Shrestha","34","No","Child"],["Nikesh Prajapati","37","No","Child"], ["Rubee Prajapati","23","No","Child"] ]
+    }
+]
