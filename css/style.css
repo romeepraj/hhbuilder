@@ -16,6 +16,7 @@ dt{
 }
 [class^="close_"], [class^="view_"]{
     cursor: pointer;
+    color:#0275d8;
 }
 .wrapper{
     margin-top:40px;
