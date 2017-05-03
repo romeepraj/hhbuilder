@@ -33,6 +33,15 @@
             "smoker": "No",
             "relation":" "
         },
-        "family":[["Neelam Prajapati","63","No","Mother"],["Romee Shrestha","34","No","sibling"],["Nikesh Prajapati","37","No","sibling"], ["Navya Prajapati","3","No","Niece"] ]
+        "family":[["Ganga Lal Prajapati","63","No","Father"],["Neelam Prajapati","63","No","Mother"],["Romee Shrestha","34","No","sibling"],["Nikesh Prajapati","37","No","sibling"], ["Navya Prajapati","3","No","Niece"] ]
+    },
+     {
+        "applicant":{
+            "age":"63",
+            "fullname":"Neelam Prajapati",
+            "smoker": "No",
+            "relation":" "
+        },
+        "family":[["Ganga Lal Prajapati","63","No","Spouse"],["Romee Shrestha","34","No","Daughter"],["Nikesh Prajapati","37","No","Son"], ["Navya Prajapati","3","No","Grand Daughter"], ["Rubee Prajapati","23","No","Child"] ]
     }
 ]
