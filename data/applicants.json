@@ -24,6 +24,15 @@
             "smoker": "No",
             "relation":" "
         },
-        "family":[["Romee Shrestha","34","No","Child"],["Nikesh Prajapati","37","No","Child"], ["Rubee Prajapati","23","No","Child"] ]
+        "family":[["Neelam Prajapati","63","No","Spouse"],["Romee Shrestha","34","No","Child"],["Nikesh Prajapati","37","No","Child"], ["Rubee Prajapati","23","No","Child"] ]
+    },
+    {
+        "applicant":{
+            "age":"23",
+            "fullname":"Rubee Prajapati",
+            "smoker": "No",
+            "relation":" "
+        },
+        "family":[["Neelam Prajapati","63","No","Mother"],["Romee Shrestha","34","No","sibling"],["Nikesh Prajapati","37","No","sibling"], ["Navya Prajapati","3","No","Niece"] ]
     }
 ]
